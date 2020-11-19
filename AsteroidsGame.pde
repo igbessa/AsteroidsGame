@@ -15,8 +15,8 @@ public void draw()
   for(int i = 0; i < astro.length; i++){
     astro[i].show();
   }
-  bob.show();
   bob.move();
+  bob.show();
 }
 public void keyPressed(){
   if(key == 'h'){
@@ -27,10 +27,10 @@ public void keyPressed(){
     bob.accelerate(0.2);
   }
   if(key == 'd'){
-    bob.turn(5);
+    bob.turn(10);
   }
     if(key == 'a'){
-    bob.turn(-5);
+    bob.turn(-10);
   }
   
 }
