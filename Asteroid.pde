@@ -7,7 +7,7 @@ class Asteroid extends Floater {
     yCorners = new int[corners];
     xCorners[0] = (int)(Math.random()*3)-9; 
     yCorners[0] = -8;
-    xCorners[1] = 0;
+    xCorners[1] = (int)(Math.random()*5)-2;
     yCorners[1] = (int)(Math.random()*4)-9;
     xCorners[2] = (int)(Math.random()*3)+6;
     yCorners[2] = -8;
