@@ -1,7 +1,7 @@
 class Spaceship extends Floater  
 {   
   public Spaceship() {
-    corners = 4;  //the number of corners, a triangular floater has 3   
+    corners = 4;    
     xCorners = new int[corners];
     yCorners = new int[corners];
     xCorners[0] = -8;   
@@ -12,7 +12,7 @@ class Spaceship extends Floater
     yCorners[2] = 8;
     xCorners[3] = -2;
     yCorners[3] = 0;
-    myColor = color(235, 149, 52); //white ship   
+    myColor = color(235, 149, 52); //orange ship   
     myCenterX = 200;
     myCenterY = 200; //holds center coordinates   
     myXspeed = 0;
@@ -30,5 +30,14 @@ class Spaceship extends Floater
   }
   public float getSY() {
     return (float)myCenterY;
+  }
+  public double getPD(){
+    return myPointDirection;
+  }
+  public double getSPX(){//gets x speed
+  return myXspeed;
+  }
+    public double getSPY(){//gets x speed
+  return myYspeed;
   }
 }
